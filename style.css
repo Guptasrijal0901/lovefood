@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;}
+iframe {max-width: 90%;}
+
+section {
+    padding: 2rem 9%;
+}
+header{
+width: 100%;
+height: 100px;
+position: fixed ;
+top: 0; 
+left: 0;
+right: 0;
+background: beige;
+display: flex;
+align-items: center;
+justify-content: space-around;
+z-index: 1000;
+box-shadow:  0 .5rem 1rem grey;
+padding: 2rem 9%;
+}
+header .logo {
+    font-size: 40px;
+    color: black;
+    padding-left: 20px;
+    font-weight:bolder ;
+}
+header .navbar a{
+    font-size: 20px;
+    padding:  2rem;
+    font-weight: bold;
+}
+header .icons a{
+    font-size: 20px;
+    padding-right: 20px;
+    padding: 2rem;
+}
+header .navbar a:hover{
+    color: black;
+}
+header .icons a:hover{
+    color: black;
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: black;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid  black;
+    display: none;
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(wallpaper.jpg) no-repeat;
+    background-size: cover;
+   }
+   .home .content{
+    max-width: 50rem;
+   }
+   .home .content h3{
+    font-size: 20px;
+    color: beige;
+   }
+   .home .content span{
+    font-size: 30px;
+    color: beige;
+    font-weight: bolder;
+    padding: 1rem 0 ;
+    line-height: 1.5;
+   }
+   .home .content p{
+    font-size: 1.5rem;
+    color: beige;
+    padding:1rem 0;
+    line-height: 1.5;
+}
+.about .row .video-container video{
+    width:100%;
+    border:1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height: 100%;
+    object-fit: cover;
+}
+.about .row {
+display: flex;
+align-items: center;
+gap: 2rem;
+flex-wrap: wrap;
+padding:2rem 0;
+padding-bottom: 3rem;
+}
+.about .row .video-container{
+    flex:1 1 40rem;
+    position: relative;
+    
+
+}
+.about .row .content{
+    flex:1 1 40rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: black;
+}
+
+.about .row .content p{
+    font-size: 20px;
+    color: black;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
+.btn{
+font-size: 20px;
+}
+.about{
+    background: url(blur.jpg) no-repeat;
+    background-size: cover;
+    font-weight: bold;
+    padding-left: 20%;
+}
+.heading {
+    font-size: 40px;
+    font-weight: bolder;
+}
+h3{
+    font-size: 30px;
+}
+.contact{
+    padding-left: 45%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 990px){
+ html{
+    font-size: 55%;
+ }
+ header{
+    padding: 2rem;
+ }
+ section{
+    padding: 2rem;
+ }
+ .home{
+    background-position: left;
+ }
+}
+@media (max-width: 600px){
+    
+   header .fa-bars{
+display: block;
+   }
+   header .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: beige;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+   header #toggler:checked ~ .navbar{
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+   header .navbar a{
+margin: 1rem;
+padding: 1rem;
+background: beige;
+border: .2rem solid black;
+display: none;
+border-radius: 15px ;
+   }
+   }
+   @media (max-width: 350px){
+    html{
+       font-size: 50%;
+    }
+    header{
+       padding: 2rem;
+    }
+   }
+   
